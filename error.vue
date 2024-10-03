@@ -1,4 +1,10 @@
-<script setup>
+<script setup lang="ts">
+import type { NuxtError } from "#app"
+
+defineProps<{
+  error: NuxtError
+}>()
+
 useHead({
   meta: [
     { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -15,6 +21,6 @@ useHead({
 <template>
   <NuxtLoadingIndicator />
   <NuxtLayout>
-    <NuxtPage />
+    <UPageError :error="error" />
   </NuxtLayout>
 </template>
