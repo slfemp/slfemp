@@ -13,6 +13,12 @@ export default <Partial<Config>>{
         sans: ["Barlow Condensed", "Barlow Condensed fallback", ...defaultTheme.fontFamily.sans],
         serif: ["Oswald", "Oswald fallback", ...defaultTheme.fontFamily.serif],
       },
+      fontSize: {
+        base: '1.125rem', // 18px
+        'sm': '1rem',
+        'lg': '1.25rem',
+        'xl': '1.5rem',
+      },
     },
   },
 }
