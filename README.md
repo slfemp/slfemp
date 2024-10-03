@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# SLFEMP
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Rewrite of the SLFEMP website in Nuxt 3.
 
 ## Setup
 

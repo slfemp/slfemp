@@ -12,9 +12,6 @@ export default defineNuxtConfig({
     '@nuxtjs/html-validator',
     '@nuxtjs/seo'
   ],
-  // ui: {
-  //   icons: ["simple-icons"],
-  // },
   supabase: {
     redirectOptions: {
       login: "/login",
