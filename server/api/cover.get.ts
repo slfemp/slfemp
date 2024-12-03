@@ -30,7 +30,8 @@ export default defineEventHandler(async (event) => {
                 ),
                 labels:labels!inner!albumlabels (
                     id,
-                    label_name
+                    label_name,
+                    picture
                 )
             `)
             .eq('id', query.id)

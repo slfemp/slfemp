@@ -22,4 +22,5 @@ export interface Artist {
 export interface Label {
     id: number;
     label_name: string;
+    picture: string;
 }
