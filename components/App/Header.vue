@@ -50,10 +50,10 @@ const links: Link[] = [
         :ui="{ width: 'w-full', item: { disabled: 'cursor-text select-text' } }"
         :popper="{ strategy: 'absolute', placement: 'top' }" class="w-auto">
         <template #default="{ open }">
-          <UButton color="gray" variant="ghost" class="w-full" :label="user.user_metadata.name"
+          <UButton color="gray" variant="ghost" class="w-full" :label="user.email"
             :class="[open && 'bg-gray-50 dark:bg-gray-800']">
             <template #leading>
-              <UAvatar :src="user.user_metadata.avatar_url" size="2xs" />
+              <UAvatar :alt="user.email" :src="user.user_metadata.avatar_url" size="2xs" />
             </template>
 
             <template #trailing>
