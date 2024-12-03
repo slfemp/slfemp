@@ -22,10 +22,10 @@ const props = defineProps({
           <p v-for="artist in cover.artists" :key="artist.id">
             {{ artist.artist_name }}
           </p>
-          <!-- <UButton color="white" variant="solid" size="lg" class="mt-3 text-xs w-full flex justify-center items-center"
-            :to="`/covers/album-${cover.properties.ID.unique_id.number}/${cover.properties.Slug.formula.string}`">
-            View
-          </UButton> -->
+          <UButton color="white" variant="solid" size="lg" class="mt-3 text-xs w-full flex justify-center items-center"
+            :to="`/covers/${cover.id}`">
+            Open Album
+          </UButton>
         </div>
       </div>
     </div>
