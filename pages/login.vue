@@ -57,8 +57,19 @@ const providers = [{
   },
 }]
 
-function onSubmit(data: any) {
-  console.log("Submitted", data)
+async function onSubmit(data: any) {
+  const { error } = await supabase.auth.signInWithPassword({
+    email: data.email,
+    password: data.password,
+  })
+
+  if (error) {
+    console.error('Login error:', error.message)
+    return
+  }
+
+  // Redirect to home page after successful login
+  navigateTo('/')
 }
 </script>
 
