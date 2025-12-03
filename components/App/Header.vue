@@ -30,8 +30,8 @@ const links: Link[] = [
     children: [
       { label: "COVERS", to: "/covers", description: "Browse the extensive collection of album covers" },
       { label: "INTERVIEWS", to: "/interviews", description: "Latest interviews with Mike Frost" },
-      { label: "PHOTOS", to: "/photos", description: "Photos from Mike Frost's career over the years" },
-      { label: "POSTERS", to: "/posters", description: "Browse the curated collection of album posters" },
+      // { label: "PHOTOS", to: "/photos", description: "Photos from Mike Frost's career over the years" },
+      // { label: "POSTERS", to: "/posters", description: "Browse the curated collection of album posters" },
     ],
   },
   { label: "BOOK - A HOUSTON STORY", to: "/book" },
