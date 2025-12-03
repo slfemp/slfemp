@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     componentIslands: true,
   },
   site: {
-    url: "https://slfemp.github.io/slfemp/", // Updated to reflect GitHub Pages URL
+    url: "https://slfemp.netlify.app", // Updated to match actual Netlify deployment
     name: "SLFEMP",
     description: "Houston Legend",
     defaultLocale: "en", // not needed if you have @nuxtjs/i18n installed
@@ -35,6 +35,8 @@ export default defineNuxtConfig({
     ],
   },
   image: {
+    provider: 'none', // Disable image optimization
+    domains: ['wuspgfcmadudsgmijbtk.supabase.co'],
   },
   // https://html-validator.nuxtjs.org/
   htmlValidator: {
