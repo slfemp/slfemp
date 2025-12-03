@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     componentIslands: true,
   },
   site: {
-    url: "https://slfemp-nuxt.vercel.app/",
+    url: "https://slfemp.github.io/slfemp/", // Updated to reflect GitHub Pages URL
     name: "SLFEMP",
     description: "Houston Legend",
     defaultLocale: "en", // not needed if you have @nuxtjs/i18n installed
