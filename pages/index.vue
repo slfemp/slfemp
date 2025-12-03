@@ -31,7 +31,7 @@ const { data: latestWork, status: latestWorkStatus } = await useAsyncData<Cover[
 
     <!-- Top 5 Covers -->
     <section class="py-8 flex flex-col justify-between gap-6 sm:gap-10   lg:flex-row">
-      <Top5Covers v-if="status === 'success'" :covers="featured" />
+      <Top5Covers v-if="featured" :covers="featured" />
     </section>
 
     <!-- Promo section -->
@@ -42,7 +42,7 @@ const { data: latestWork, status: latestWorkStatus } = await useAsyncData<Cover[
     </section>
 
     <section class="pb-8">
-      <LatestWork v-if="latestWorkStatus === 'success'" :latest-work="latestWork" />
+      <LatestWork v-if="latestWork" :latest-work="latestWork" />
     </section>
   </UContainer>
 </template>

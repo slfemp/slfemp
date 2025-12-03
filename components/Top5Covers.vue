@@ -28,7 +28,7 @@ const props = defineProps<{
 
 
     <ul class="py-6 grid grid-cols-2 sm:grid-cols-5 gap-4 w-full">
-      <li v-for="cover in covers" :key="cover.id">
+      <li v-for="cover in covers || []" :key="cover.id">
         <ULink :to="`/covers/${cover.id}`">
           <AlbumCover :cover="cover" />
         </ULink>

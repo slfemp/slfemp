@@ -59,7 +59,7 @@ function getCoverClass(index: number) {
   </h2>
 
   <ULandingGrid>
-    <ULink :class="getCoverClass(index + 1)" :to="`/covers/${cover.id}`" v-for="(cover, index) in latestWork"
+    <ULink :class="getCoverClass(index + 1)" :to="`/covers/${cover.id}`" v-for="(cover, index) in latestWork || []"
       :key="cover.id">
       <AlbumCover :cover="cover" />
     </ULink>
