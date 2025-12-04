@@ -22,12 +22,15 @@ const { data: latestWork, status: latestWorkStatus } = await useAsyncData<Cover[
 </script>
 
 <template>
+      <HeroVideo 
+      :video-src="undefined"
+      image-src="/fatpat-slider.jpg" 
+      alt="Paul Wall The Great Wall"
+      max-height="600px"
+    />
+
   <UContainer class="py-8">
-    <section class="mb-8 flex flex-col justify-between gap-6 sm:gap-10 lg:flex-row">
-      <!-- content - start -->
-      <NuxtImg src="/slider-paulwall-thegreatwall-mike-frost.jpg" alt="Paul Wall The Great Wall"
-        class="w-full h-[40rem] object-cover" />
-    </section>
+    <!-- Hero Video Section -->
 
     <!-- Top 5 Covers -->
     <section class="py-8 flex flex-col justify-between gap-6 sm:gap-10   lg:flex-row">
