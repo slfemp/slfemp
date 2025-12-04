@@ -22,28 +22,29 @@ const { data: latestWork, status: latestWorkStatus } = await useAsyncData<Cover[
 </script>
 
 <template>
-      <HeroVideo 
-      :video-src="undefined"
-      image-src="/fatpat-slider.jpg" 
-      alt="Paul Wall The Great Wall"
-      max-height="600px"
-    />
+  <!-- Hero Video (full width, behind header) -->
+  <HeroVideo 
+    :video-src="undefined"
+    image-src="/fatpat-slider.jpg" 
+    alt="Paul Wall The Great Wall"
+    max-height="600px"
+  />
 
+  <!-- Main content with proper spacing -->
   <UContainer class="py-8">
-    <!-- Hero Video Section -->
-
     <!-- Top 5 Covers -->
-    <section class="py-8 flex flex-col justify-between gap-6 sm:gap-10   lg:flex-row">
+    <section class="py-8 flex flex-col justify-between gap-6 sm:gap-10 lg:flex-row">
       <Top5Covers v-if="featured" :covers="featured" />
     </section>
 
     <!-- Promo section -->
-    <section class="pb-8 ">
+    <section class="pb-8">
       <!-- <ClientOnly>
         <PromoSection />
       </ClientOnly> -->
     </section>
 
+    <!-- Latest Work -->
     <section class="pb-8">
       <LatestWork v-if="latestWork" :latest-work="latestWork" />
     </section>

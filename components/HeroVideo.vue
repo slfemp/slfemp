@@ -32,7 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="mb-8 relative w-full overflow-hidden">
+  <section class="relative w-full overflow-hidden">
     <!-- Video Element -->
     <video
       v-if="videoSrc"

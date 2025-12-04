@@ -40,7 +40,7 @@ const links: Link[] = [
 </script>
 
 <template>
-  <UHeader :links="links">
+  <UHeader :links="links" class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
     <template #logo>
       <AppLogo class="w-36 -mb-2 dark:fill-white fill-black" />
     </template>
